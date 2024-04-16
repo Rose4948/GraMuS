@@ -49,20 +49,20 @@ where runtotal.py is main entry file. Using the above command, GraMuS would exec
 ## Experimental data
 
 * We have made detailed experimental data open-source. In this section, we will provide a detailed introduction to the role of each folder and its files in a tree-like structure.
-- > ExperimentalData:  The experimental results of our approach and baselines.
-  - > GraMuS: The experimental results of our approach and baselines.
-    - > Chart.xlsx:  All detailed data of GraMuS in all metrics on Chart 
-    - > Cli.xlsx:    All detailed data of GraMuS in all metrics on Cli
-    - > JxPath.xlsx: All detailed data of GraMuS in all metrics on JxPath
-    - > Lang.xlsx:   All detailed data of GraMuS in all metrics on Lang
-    - > Math.xlsx:   All detailed data of GraMuS in all metrics on Math
-    - > The details of ablation experiments on graph-based representation.xlsx: Detailed ablation experiment results regarding four node representations, five edge representations, and the features as node attributes.
-    - > Train and Test Time.xlsx: Detailed time data regarding model training and inference.
-  -  > abconfiguration.xlsx
-  -  > SBFL-MBFL.xlsx: All detailed data of 34 SBFL formulae and 34 MBFL formulae in all metrics on five subjects
-  -  > Grace.xlsx: All detailed data of Grace in all metrics on five subjects
-  -  > SmarFL Detailed Worst  Rankt.txt: Detailed ranking information of SmartFL in all metrics  on three subjects
-  -  > SmartFL.xlsx: Results of SmartFL in all metrics on three subjects
+- ExperimentalData  `The experimental results of our approach and baselines.`
+  - GraMuS  `The experimental results of our approach and baselines.`
+    - Chart.xlsx  ` All detailed data of GraMuS in all metrics on Chart `
+    - Cli.xlsx  `   All detailed data of GraMuS in all metrics on Cli`
+    - JxPath.xlsx  `All detailed data of GraMuS in all metrics on JxPath`
+    - Lang.xlsx  `  All detailed data of GraMuS in all metrics on Lang`
+    - Math.xlsx  `  All detailed data of GraMuS in all metrics on Math`
+    - The details of ablation experiments on graph-based representation.xlsx  `Detailed ablation experiment results regarding four node representations, five edge representations, and the features as node attributes.`
+    - Train and Test Time.xlsx  `Detailed time data regarding model training and inference.`
+  -  abconfiguration.xlsx
+  -  SBFL-MBFL.xlsx  `All detailed data of 34 SBFL formulae and 34 MBFL formulae in all metrics on five subjects`
+  -  Grace.xlsx `All detailed data of Grace in all metrics on five subjects`
+  -  SmarFL Detailed Worst  Rankt.txt `Detailed ranking information of SmartFL in all metrics  on three subjects`
+  -  SmartFL.xlsx `Results of SmartFL in all metrics on three subjects`
 - 文件夹2
   - 子文件夹3
     - 文件4
