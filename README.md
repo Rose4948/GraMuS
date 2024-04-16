@@ -49,8 +49,8 @@ where runtotal.py is main entry file. Using the above command, GraMuS would exec
 ## Experimental data
 
 * We have made detailed experimental data open-source. In this section, we will provide a detailed introduction to the role of each folder and its files in a tree-like structure.
-- ExperimentalData > The experimental results of our approach and baselines.
-  - GraMuS > The experimental results of our approach and baselines.
+- > ExperimentalData  The experimental results of our approach and baselines.
+  - > GraMuS The experimental results of our approach and baselines.
     - Chart.xlsx > All detailed data of GraMuS in all metrics on Chart 
     - Cli.xlsx   > All detailed data of GraMuS in all metrics on Cli
     - JxPath.xlsx> All detailed data of GraMuS in all metrics on JxPath
