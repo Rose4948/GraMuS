@@ -1,36 +1,33 @@
 # GraMuS
 > GraMuS: a novel Graph representation learning and Multi-information based technique for Statement-level FL. GraMuS is comprised of two key components: a fine-grained fault diagnosis Graph integrally recording enriched Multi-information from various levels of granularity, and a multi-level collaborative suspiciousness measure which utilizes the interactions between FL tasks at various levels of granularity to extract existing/latent useful features from multi sources of information for more precise FL.
+
 ## Introduction
 * This project corresponds to the paper `GraMuS: Boosting Statement-level Fault Localization via Graph Representation and Multimodal Information` (doi links will be added in the future).
 
 ## Environment
 PyTorch: V1.13.0  
-
 OS: CentOS Linux release 7.9.2009 (Core) 
 
-
-## Using GMBFL
+## Using GraMuS
 > Example commands  
 
 Find Faults for a specific project (commons lang):  
 
-* python runtotal.py Lang 0 0.01 60 SpGGAT 15 3  
+* python runtotalAll.py Lang 0 0.01 60 SpGGAT 15 3  
 
-where runtotal.py is main entry file. Using the above command, GraMuS would execute the run.py, GGAT.py, sum.py, respectively.    
+where runtotal.py is main entry file. Using the above command, GraMuS would execute the `runAll.py`, `DataCofigAll.py`, `ModelAll.py`, `TransfomerAll.py`, `GGAT.py`, `sum.py`, respectively.    
 
 
 > Note  
-
 * The third, fourth, fifth, seventh and eighth parameters in the `Example commands` are `random seed`, `learning rate`, `batch size`, `training epoch`, `number of model layers`, respectively.  
 
-* These values in the `Example commands` all are default configuration on GMBFL. If you are making a first attempt at using GMBFL in your project, it is recommended to use the default parameters.  
+* These values in the `Example commands` all are default configuration on GraMuS. If you are making a first attempt at using GraMuS in your project, it is recommended to use the default parameters.  
 
-* `GGAT` specifies the use of gated graph attention neural network models. Since the adjacency matrix representing the graph structure is a sparse matrix, we additionally provide a sparse matrix-based gated graph attention neural network `SpGGAT` to reduce the space required at runtime. If you do, configure it in `Transformer.py`.  
+* `GGAT` is the gated graph attention neural network model. Since the adjacency matrix representing the graph structure is a sparse matrix, we additionally provide a sparse matrix-based gated graph attention neural network `SpGGAT` to reduce the space required at runtime. Both models are configured in `GGAT.py`. Should you wish to employ `SpGGAT`, you can designate the sixth parameter as `SpGGAT`, as exemplified in the `Example command`. 
 
     
 >  Configuration of Multi-head attention  
-
-Due to space limitations, we did not use the multi-head attention mechanism. However, the advantages of multi-head attention have been generally acknowledged, and we also retain the interface to configure the multi-head attention mechanism. If you do, go to `model.py`.  
+We did not use the multi-head attention mechanism in our work. However, the advantages of multi-head attention have been generally acknowledged, and we also retain the interface to configure the multi-head attention mechanism. If you do, go to `modelAll.py`.  
 
 > Important Files  
 
