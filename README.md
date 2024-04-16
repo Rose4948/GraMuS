@@ -35,9 +35,9 @@ where runtotal.py is main entry file. Using the above command, GraMuS would exec
 
 * `runAll.py` is responsible for training the ranking model for each buggy version of the project under test and predicting the fault location based on its graph representation. Each version of the ranking results is saved in a separate pkl file.
   
-*`DataCofigAll.py` is a fault diagnosis graph construction file that generates input files for model training and testing. Its responsibility lies in constructing the fault diagnosis graph, representing the multimodal information of the buggy program into the graph structure, graph nodes, and their attributes.
+* `DataCofigAll.py` is a fault diagnosis graph construction file that generates input files for model training and testing. Its responsibility lies in constructing the fault diagnosis graph, representing the multimodal information of the buggy program into the graph structure, graph nodes, and their attributes.
 
-*`ModleAll.py` and `TransformerAll.py` are framework files for model configuration,  overseeing model iteration and optimization. They facilitate the flexible configuration of various network models. To set up a new ranking model x, you can seamlessly align its input and output with the two files, enabling you to start using it effortlessly.
+* `ModleAll.py` and `TransformerAll.py` are framework files for model configuration,  overseeing model iteration and optimization. They facilitate the flexible configuration of various network models. To set up a new ranking model x, you can seamlessly align its input and output with the two files, enabling you to start using it effortlessly.
 
 * `GGAT.py` provides detailed code for both `GGAT` and `SpGGAT`.  Please choose which one to use according to your actual situation.
 
