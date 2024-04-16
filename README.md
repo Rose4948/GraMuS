@@ -58,13 +58,16 @@ where runtotal.py is main entry file. Using the above command, GraMuS would exec
     - Math.xlsx  `  All detailed data of GraMuS in all metrics on Math`
     - The details of ablation experiments on graph-based representation.xlsx  `Detailed ablation experiment results regarding four node representations, five edge representations, and the features as node attributes.`
     - Train and Test Time.xlsx  `Detailed time data regarding model training and inference.`
-  -  abconfiguration.xlsx
+  -  abconfiguration.xlsx `Experimental results regarding the  different configurations of parameters a and b in our loss function.`
   -  SBFL-MBFL.xlsx  `All detailed data of 34 SBFL formulae and 34 MBFL formulae in all metrics on five subjects`
   -  Grace.xlsx `All detailed data of Grace in all metrics on five subjects`
   -  SmarFL Detailed Worst  Rankt.txt `Detailed ranking information of SmartFL in all metrics  on three subjects`
   -  SmartFL.xlsx `Results of SmartFL in all metrics on three subjects`
-- 文件夹2
-  - 子文件夹3
-    - 文件4
+- detailed information of motivation example
+  - 1 runing results produced by GraMuS
+  - 1 runing results produced by Grace
+  - 1 The performance of all approaches in motivation example， including detail suspiciousness and rank .doc
+  - 1 code snippets Cli7.pdf
+  - 1 patch.png
 
 
