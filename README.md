@@ -27,18 +27,23 @@ where runtotal.py is main entry file. Using the above command, GraMuS would exec
 
     
 >  Configuration of Multi-head attention  
-We did not use the multi-head attention mechanism in our work. However, the advantages of multi-head attention have been generally acknowledged, and we also retain the interface to configure the multi-head attention mechanism. If you do, go to `modelAll.py`.  
+* We did not use the multi-head attention mechanism in our work. However, the advantages of multi-head attention have been generally acknowledged, and we also retain the interface to configure the multi-head attention mechanism. If you do, go to `modelAll.py`.  
 
 > Important Files  
 
-* `runtotal.py` receives the parameters entered by the user and performs the experiment for the user specified project according to the corresponding configuration.
+* `runtotalAll.py` receives the parameters entered by the user and performs the experiment for the user specified project according to the corresponding configuration.
 
-* `run.py` is responsible for training the ranking model for each buggy version of the project under test and predicting the fault location based on its graph representation. Each version of the ranking results is saved in a separate pkl file.
+* `runAll.py` is responsible for training the ranking model for each buggy version of the project under test and predicting the fault location based on its graph representation. Each version of the ranking results is saved in a separate pkl file.
+  
+*`DataCofigAll.py` is a fault diagnosis graph construction file that generates input files for model training and testing. Its responsibility lies in constructing the fault diagnosis graph, representing the multimodal information of the buggy program into the graph structure, graph nodes, and their attributes.
 
-* `GGAT.py` provides detailed code for both `GGANN` and `SpGGANN`.  Please choose which one to use according to your actual situation.
+*`ModleAll.py` and `TransformerAll.py` are framework files for model configuration,  overseeing model iteration and optimization. They facilitate the flexible configuration of various network models. To set up a new ranking model x, you can seamlessly align its input and output with the two files, enabling you to start using it effortlessly.
 
-* `sum.py` merges the results for all the buggy version of the project under test and  stores them in a pkl file.
- In addition, metrics about `top-1`,`top-3`, and `top-5` are displayed in the console.  
+* `GGAT.py` provides detailed code for both `GGAT` and `SpGGAT`.  Please choose which one to use according to your actual situation.
+
+* `sum.py` merges the results for all the buggy version of the project under test and  stores them in a pkl file. In addition, metrics about `top-1`,`top-3`, and `top-5` are displayed in the console.  
 
 > Dataset
 
+
+##Experimental data
