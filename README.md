@@ -33,7 +33,7 @@ In our experimental process, we focused on five Defects4J subjects:
 | Math      | commons-math          | 3,602 | 85K  | 102      | 264     |
 | Time      | Joda-Time             | 4,130 | 28K  | 24       | 63      |
 | Closure   | Google Closure compile| 7,927 | 90K  | 30       | 77      |
-|-----------------------------------------------------------------------|
+|-----------|-----------------------|-------|------|----------|---------|
 |ConDefects |                       | 34    | 96   | 374      | 374     |
 
 These subjects collectively encompass a total of 243 versions and 338 faults.
