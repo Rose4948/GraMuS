@@ -20,9 +20,8 @@ These resources are made available to facilitate reference and reproducibility o
 
 ## Data Files
 The project includes a dedicated "Data" folder, housing essential files required for experimentation. These data files are instrumental in supporting various aspects of fault localization strategies. Developers can find and utilize these files within the repository to conduct experiments, analyze results, and enhance their understanding of GraMuS's effectiveness in refining fault localization.
-   1. **Defects4J**
 
-In our experimental process, we focused on five Defects4J subjects:
+In our experimental process, we focused on seven subjects from Defects4J and 374 Python programs from ConDefects, with a total of 661 faulty programs:
 
 | Subject   | Name                  | #Test | #Loc | #Version | #Faults |
 |-----------|-----------------------|-------|------|----------|---------|
@@ -36,34 +35,35 @@ In our experimental process, we focused on five Defects4J subjects:
 |-----------|-----------------------|-------|------|----------|---------|
 |ConDefects |                       | 34    | 96   | 374      | 374     |
 
-These subjects collectively encompass a total of 661 faulty programs.
+## Code Files
 
-3. **Data Format**
+## Runtime Environment and Dependencies
 
-The experiment data is provided in JSON format, offering a structured and versatile representation for ease of use. 
+To run the code for this project, ensure you have the following runtime environment:
 
-As an illustration, here is an example structure of the JSON data for the subject "Lang" with the version "Lang1":
+1. **Python Version:** Python 3.X
 
-```json
-{   
-   "proj": "Lang1", 
-    "ans": [1], 
-    "methods": {"org/apache/commons/lang3/StringUtils.java@isBlank.finalCharSequencecs": 0, "org/apache/commons/lang3/math/NumberUtils.java@createNumber.finalStringstr": 1,...}, 
-    "ftest": {"org.apache.commons.lang3.math.NumberUtilsTest#TestLang747": 0}, 
-    "rtest": {"org.apache.commons.lang3.StringUtilsTest#testDefaultIfBlank_StringString": 0, "org.apache.commons.lang3.StringUtilsTest#testDefaultIfBlank_StringBuffers": 1, ...}, 
-    "lines": {"org/apache/commons/lang3/StringUtils.java25": 0, "org/apache/commons/lang3/StringUtils.java27": 1, ...}, 
-    "ltype": {"0": "IfStatement", "1": "ForStatement",  ...},
-"edge": [[0, 0], [1, 0], ...], 
-"mutation": {"10": 0, "11": 1, ...}, 
-    "mtype": {"0": "ROR.==.FALSE", "1": "LVR.0.POS", ...}, 
-    "edge12": [[0, 0], [1, 0],...], 
-    "edge13": [[4, 23], [8, 23],...], 
-    "edge14": [[4, 0], [8, 0],...], 
-}
+Install the required dependencies using the following commands:
+
+```bash
+pip install numpy
+pip install json
+pip install pickle
+# Add any other necessary dependencies
 ```
-## Environment
-PyTorch: V1.13.0  
-OS: CentOS Linux release 7.9.2009 (Core) 
+Please note that the provided list includes common dependencies like numpy, json, and pickle. Adjust the dependencies based on specific details within your code. If there are additional dependencies or specific versions required, update the installation commands accordingly.
+
+2. **PyTorch Version:** V1.13.0
+
+OS: CentOS Linux release 7.9.2009 (Core)
+
+**1. Install Conda**
+- Visit the [Anaconda official website](https://www.anaconda.com/products/distribution) or [Miniconda official website](https://docs.conda.io/en/latest/miniconda.html) to install Conda suitable for your operating system.
+
+**2. Configure PyTorch**
+-After installing Conda, use Conda to configure the PyTorch environment according to the official guidelines and activate it. Note that GPU support is required.
+
+
 
 ## Using GraMuS
 > Example commands  
