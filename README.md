@@ -32,7 +32,6 @@ In our experimental process, we focused on seven subjects from Defects4J and 374
 | Math      | commons-math          | 3,602 | 85K  | 102      | 264     |
 | Time      | Joda-Time             | 4,130 | 28K  | 24       | 63      |
 | Closure   | Google Closure compile| 7,927 | 90K  | 30       | 77      |
-|-----------|-----------------------|-------|------|----------|---------|
 |ConDefects |                       | 34    | 96   | 374      | 374     |
 
 ## Code Files
