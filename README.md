@@ -36,6 +36,19 @@ In our experimental process, we focused on seven subjects from Defects4J and 374
 
 ## Code Files
 
+- **runtotalAll.py**: receives the parameters entered by the user and performs the experiment for the user specified project according to the corresponding configuration.
+
+- **runAll.py**: is responsible for training the ranking model for each buggy version of the project under test and predicting the fault location based on its graph representation. Each version of the ranking results is saved in a separate pkl file.
+  
+- **DataCofigAll.py**: is a fault diagnosis graph construction file that generates input files for model training and testing. Its responsibility lies in constructing the fault diagnosis graph, representing the multimodal information of the buggy program into the graph structure, graph nodes, and their attributes.
+
+- **ModleAll.py** and **TransformerAll.py**: are framework files for model configuration,  overseeing model iteration and optimization. They facilitate the flexible configuration of various network models. To set up a new ranking model x, you can seamlessly align its input and output with the two files, enabling you to start using it effortlessly.
+
+- **GGAT.py**: provides detailed code for both `GGAT` and `SpGGAT`.  Please choose which one to use according to your actual situation.
+
+- **sum.py**: merges the results for all the buggy version of the project under test and  stores them in a pkl file. In addition, metrics about `top-1`,`top-3`, and `top-5` are displayed in the console.  
+
+
 ## Runtime Environment and Dependencies
 
 To run the code for this project, ensure you have the following runtime environment:
@@ -63,7 +76,7 @@ After installing Conda, use Conda to configure the PyTorch environment according
 conda activate pytorch
 ```
 
-2. **Using GraMuS**
+3. **Using GraMuS**
 #### Example commands
   Change to the working directory, run GraMuS to localize faults for a specific project, for example, Lang:
   ```bash
@@ -87,17 +100,6 @@ where runtotal.py is main entry file. Using the above command, GraMuS would exec
 
 > Important Files  
 
-* `runtotalAll.py` receives the parameters entered by the user and performs the experiment for the user specified project according to the corresponding configuration.
-
-* `runAll.py` is responsible for training the ranking model for each buggy version of the project under test and predicting the fault location based on its graph representation. Each version of the ranking results is saved in a separate pkl file.
-  
-* `DataCofigAll.py` is a fault diagnosis graph construction file that generates input files for model training and testing. Its responsibility lies in constructing the fault diagnosis graph, representing the multimodal information of the buggy program into the graph structure, graph nodes, and their attributes.
-
-* `ModleAll.py` and `TransformerAll.py` are framework files for model configuration,  overseeing model iteration and optimization. They facilitate the flexible configuration of various network models. To set up a new ranking model x, you can seamlessly align its input and output with the two files, enabling you to start using it effortlessly.
-
-* `GGAT.py` provides detailed code for both `GGAT` and `SpGGAT`.  Please choose which one to use according to your actual situation.
-
-* `sum.py` merges the results for all the buggy version of the project under test and  stores them in a pkl file. In addition, metrics about `top-1`,`top-3`, and `top-5` are displayed in the console.  
 
 > Dataset
 URL：https://pan.baidu.com/s/1-eekbS0oGh6c147qdeMkOw 
