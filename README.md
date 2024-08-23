@@ -21,7 +21,7 @@ These resources are made available to facilitate reference and reproducibility o
 ## Data Files
 The project includes a dedicated "Data" folder, housing essential files required for experimentation. These data files are instrumental in supporting various aspects of fault localization strategies. Developers can find and utilize these files within the repository to conduct experiments, analyze results, and enhance their understanding of GraMuS's effectiveness in refining fault localization.
 
-In our experimental process, we focused on seven subjects from Defects4J and 374 Python programs from ConDefects, with a total of 661 faulty programs:
+In our experimental process, we focused on seven subjects from Defects4J [Defects4J](https://github.com/rjust/defects4j) and 374 Python programs from [ConDefects](https://github.com/appmlk/ConDefects), with a total of 661 faulty programs:
 
 | Subject   | Name                  | #Test | #Loc | #Version | #Faults |
 |-----------|-----------------------|-------|------|----------|---------|
