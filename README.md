@@ -69,7 +69,9 @@ conda activate pytorch
 
 Find Faults for a specific project (commons lang):  
 
-* ```python runtotalAll.py Lang 0 0.01 60 SpGGAT 15 3```  
+```bash
+python runtotalAll.py Lang 0 0.01 60 SpGGAT 15 3
+```  
 
 where runtotal.py is main entry file. Using the above command, GraMuS would execute the `runAll.py`, `DataCofigAll.py`, `ModelAll.py`, `TransfomerAll.py`, `GGAT.py`, `sum.py`, respectively.    
 
