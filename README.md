@@ -49,7 +49,7 @@ In our experimental process, we focused on seven subjects from Defects4J and 374
 - **sum.py**: merges the results for all the buggy version of the project under test and  stores them in a pkl file. In addition, metrics about `top-1`,`top-3`, and `top-5` are displayed in the console.  
 
 
-## Runtime Environment and Dependencies
+## Using GraMuS
 
 To run the code for this project, ensure you have the following runtime environment:
 
@@ -76,14 +76,13 @@ After installing Conda, use Conda to configure the PyTorch environment according
 conda activate pytorch
 ```
 
-3. **Using GraMuS**
-#### Example commands
+3. **Example commands**
+
   Change to the working directory, run GraMuS to localize faults for a specific project, for example, Lang:
   ```bash
   cd path/GraMuS-master
   python runtotalAll.py Lang 0 0.01 60 SpGGAT 15 3
   ```
-
 where runtotal.py is main entry file. Using the above command, GraMuS would execute the `runAll.py`, `DataCofigAll.py`, `ModelAll.py`, `TransfomerAll.py`, `GGAT.py`, `sum.py`, respectively.    
 
 
