@@ -42,7 +42,7 @@ In our experimental process, we focused on seven subjects from Defects4J and 374
   
 - **DataCofigAll.py**: is a fault diagnosis graph construction file that generates input files for model training and testing. Its responsibility lies in constructing the fault diagnosis graph, representing the multimodal information of the buggy program into the graph structure, graph nodes, and their attributes.
 
-- **ModleAll.py** and **TransformerAll.py**: are framework files for model configuration,  overseeing model iteration and optimization. They facilitate the flexible configuration of various network models. To set up a new ranking model x, you can seamlessly align its input and output with the two files, enabling you to start using it effortlessly.
+- **ModleAll.py** and **TransformerAll.py**: are framework files for model configuration,  overseeing model iteration and optimization. They facilitate the flexible configuration of various network models. To set up a new ranking model x, you can seamlessly align its input and output with the two files, enabling you to start using it effortlessly. Besides, we did not use the multi-head attention mechanism in our work. However, the advantages of multi-head attention have been generally acknowledged, and we also retain the interface to configure the multi-head attention mechanism in this file.  
 
 - **GGAT.py**: provides detailed code for both `GGAT` and `SpGGAT`.  Please choose which one to use according to your actual situation.
 
@@ -96,9 +96,7 @@ where runtotal.py is main entry file. Using the above command, GraMuS would exec
 
     
 >  Configuration of Multi-head attention  
-* We did not use the multi-head attention mechanism in our work. However, the advantages of multi-head attention have been generally acknowledged, and we also retain the interface to configure the multi-head attention mechanism. If you do, go to `modelAll.py`.  
 
-> Important Files  
 
 
 > Dataset
