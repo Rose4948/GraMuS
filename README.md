@@ -18,6 +18,25 @@ Within this open-source project, we offer essential resources for experimentatio
 
 These resources are made available to facilitate reference and reproducibility of the experimental process. Developers can clone the repository to access the code and data required for utilizing GraMuS in fault localization experiments.
 
+## Data Files
+The project includes a dedicated "Data" folder, housing essential files required for experimentation. These data files are instrumental in supporting various aspects of fault localization strategies. Developers can find and utilize these files within the repository to conduct experiments, analyze results, and enhance their understanding of GBSR's effectiveness in refining fault localization.
+   1. **Defects4J**
+
+In our experimental process, we focused on five Defects4J subjects:
+
+| Subject   | Name                  | #Test | #Loc | #Version | #Faults |
+|-----------|-----------------------|-------|------|----------|---------|
+| Lang      | commons-lang          | 2,245 | 22K  | 52       | 123     |
+| Chart     | jfreechart            | 2,205 | 96K  | 24       | 97      |
+| Cli       | commons-cli           | 361   | 4K   | 33       | 83      |
+| JxPath    | commons-jxpath        | 401   | 21K  | 22       | 71      |
+| Math      | commons-math          | 3,602 | 85K  | 102      | 264     |
+| Time      | Joda-Time             | 4,130 | 28K  | 24       | 63      |
+| Closure   | Google Closure compile| 7,927 | 90K  | 30       | 77      |
+|-----------------------------------------------------------------------|
+|ConDefects |                       | 34    | 96   | 374      | 374     |
+
+These subjects collectively encompass a total of 243 versions and 338 faults.
 
 ## Environment
 PyTorch: V1.13.0  
