@@ -85,7 +85,7 @@ conda activate pytorch
   ```
 where `runtotal.py` is main entry file, `Lang` is the project under test, `0` is the random seed, `0.01` is the learning rate, `60`is the batch size, `SpGGAT` is the gated graph attention neural network model, `15` is training epoch, and `3` is the number of model layers. Using the above command, GraMuS would execute the `runAll.py`, `DataCofigAll.py`, `ModelAll.py`, `TransfomerAll.py`, `GGAT.py`, `sum.py`, respectively.    
 
-3. **Note**
+4. **Note**
 
 - These values in the `Example commands` all are default configuration on GraMuS. If you are making a first attempt at using GraMuS in your project, it is recommended to use the default parameters.  
 
