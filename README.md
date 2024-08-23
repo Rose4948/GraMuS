@@ -36,8 +36,31 @@ In our experimental process, we focused on five Defects4J subjects:
 |-----------|-----------------------|-------|------|----------|---------|
 |ConDefects |                       | 34    | 96   | 374      | 374     |
 
-These subjects collectively encompass a total of 243 versions and 338 faults.
+These subjects collectively encompass a total of 661 faulty programs.
 
+3. **Data Format**
+
+The experiment data is provided in JSON format, offering a structured and versatile representation for ease of use. 
+
+As an illustration, here is an example structure of the JSON data for the subject "Lang" with the version "Lang1":
+
+```json
+{   
+   "proj": "Lang1", 
+    "ans": [1], 
+    "methods": {"org/apache/commons/lang3/StringUtils.java@isBlank.finalCharSequencecs": 0, "org/apache/commons/lang3/math/NumberUtils.java@createNumber.finalStringstr": 1,...}, 
+    "ftest": {"org.apache.commons.lang3.math.NumberUtilsTest#TestLang747": 0}, 
+    "rtest": {"org.apache.commons.lang3.StringUtilsTest#testDefaultIfBlank_StringString": 0, "org.apache.commons.lang3.StringUtilsTest#testDefaultIfBlank_StringBuffers": 1, ...}, 
+    "lines": {"org/apache/commons/lang3/StringUtils.java25": 0, "org/apache/commons/lang3/StringUtils.java27": 1, ...}, 
+    "ltype": {"0": "IfStatement", "1": "ForStatement",  ...},
+"edge": [[0, 0], [1, 0], ...], 
+"mutation": {"10": 0, "11": 1, ...}, 
+    "mtype": {"0": "ROR.==.FALSE", "1": "LVR.0.POS", ...}, 
+    "edge12": [[0, 0], [1, 0],...], 
+    "edge13": [[4, 23], [8, 23],...], 
+    "edge14": [[4, 0], [8, 0],...], 
+}
+```
 ## Environment
 PyTorch: V1.13.0  
 OS: CentOS Linux release 7.9.2009 (Core) 
