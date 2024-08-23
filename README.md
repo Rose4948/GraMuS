@@ -16,7 +16,7 @@ Within this open-source project, we offer essential resources for experimentatio
 - **detailed information of motivation example Folder**:  The effectiveness of our approach is demonstrated using a real faulty program, Cli27 from Defects4J. We provide complete suspiciousness scores and rankings from various fault localization techniques for this example.
 - **ExperimentalData Folder**: Provide all experimental data on two benchmarks Defects4J and ConDefects for this study.
 
-These resources are made available to facilitate reference and reproducibility of the experimental process. Developers can clone the repository to access the code and data required for utilizing GBSR in fault localization experiments.
+These resources are made available to facilitate reference and reproducibility of the experimental process. Developers can clone the repository to access the code and data required for utilizing GraMuS in fault localization experiments.
 
 
 ## Environment
