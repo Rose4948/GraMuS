@@ -56,13 +56,13 @@ Please note that the provided list includes common dependencies like numpy, json
 2. **PyTorch Version:** V1.13.0
 
 OS: CentOS Linux release 7.9.2009 (Core)
+```bash
+#1. Install Conda**
+Visit the [Anaconda official website](https://www.anaconda.com/products/distribution) or [Miniconda official website](https://docs.conda.io/en/latest/miniconda.html) to install Conda suitable for your operating system.
 
-**1. Install Conda**
-- Visit the [Anaconda official website](https://www.anaconda.com/products/distribution) or [Miniconda official website](https://docs.conda.io/en/latest/miniconda.html) to install Conda suitable for your operating system.
-
-**2. Configure PyTorch**
+#2. Configure PyTorch**
 -After installing Conda, use Conda to configure the PyTorch environment according to the official guidelines and activate it. Note that GPU support is required.
-
+```
 
 
 ## Using GraMuS
