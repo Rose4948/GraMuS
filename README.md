@@ -4,6 +4,21 @@
 ## Introduction
 * This project corresponds to the paper `GraMuS: Boosting Statement-level Fault Localization via Graph Representation and Multimodal Information` (doi links will be added in the future).
 
+
+
+## Provided Resources:
+
+Within this open-source project, we offer essential resources for experimentation:
+
+
+- **Data Folder**: Contains the necessary data files for conducting experiments.
+- **Code Folder**: Includes the source code implementing the GraMuS strategy.
+- **detailed information of motivation example Folder**:  The effectiveness of our approach is demonstrated through an example program containing a Cli27 program with critical information.
+- **ExperimentalData Folder**: We also conducted further analysis on the SIR dataset, and the experimental results are presented in this folder.
+
+These resources are made available to facilitate reference and reproducibility of the experimental process. Developers can clone the repository to access the code and data required for utilizing GBSR in fault localization experiments.
+
+
 ## Environment
 PyTorch: V1.13.0  
 OS: CentOS Linux release 7.9.2009 (Core) 
