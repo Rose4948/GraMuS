@@ -83,24 +83,17 @@ conda activate pytorch
   cd path/GraMuS-master
   python runtotalAll.py Lang 0 0.01 60 SpGGAT 15 3
   ```
-where runtotal.py is main entry file. Using the above command, GraMuS would execute the `runAll.py`, `DataCofigAll.py`, `ModelAll.py`, `TransfomerAll.py`, `GGAT.py`, `sum.py`, respectively.    
-
+where `runtotal.py` is main entry file, `Lang` is the projects under test, `0` is our default random seed, `0.01` is the learning rate, `60`is the batch size, `SpGGAT` is the gated graph attention neural network model, `15` is training epoch, and `3` is the number of model layers. Using the above command, GraMuS would execute the `runAll.py`, `DataCofigAll.py`, `ModelAll.py`, `TransfomerAll.py`, `GGAT.py`, `sum.py`, respectively.    
 
 > Note  
-* The third, fourth, fifth, seventh and eighth parameters in the `Example commands` are `random seed`, `learning rate`, `batch size`, `training epoch`, `number of model layers`, respectively.  
-
 * These values in the `Example commands` all are default configuration on GraMuS. If you are making a first attempt at using GraMuS in your project, it is recommended to use the default parameters.  
 
 * `GGAT` is the gated graph attention neural network model. Since the adjacency matrix representing the graph structure is a sparse matrix, we additionally provide a sparse matrix-based gated graph attention neural network `SpGGAT` to reduce the space required at runtime. Both models are configured in `GGAT.py`. Should you wish to employ `SpGGAT`, you can designate the sixth parameter as `SpGGAT`, as exemplified in the `Example command`. 
 
-    
->  Configuration of Multi-head attention  
 
 
 
-> Dataset
-URL：https://pan.baidu.com/s/1-eekbS0oGh6c147qdeMkOw 
-password：z2dp 
+
 
 
 
