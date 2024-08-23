@@ -66,8 +66,10 @@ conda activate pytorch
 2. **Using GraMuS**
 #### Example commands
   Change to the working directory, run GraMuS to localize faults for a specific project, for example, Lang:
-    - `cd path/GraMuS-master`
-    - `python runtotalAll.py Lang 0 0.01 60 SpGGAT 15 3`
+  ```bash
+  cd path/GraMuS-master
+  python runtotalAll.py Lang 0 0.01 60 SpGGAT 15 3
+  ```
 
 where runtotal.py is main entry file. Using the above command, GraMuS would execute the `runAll.py`, `DataCofigAll.py`, `ModelAll.py`, `TransfomerAll.py`, `GGAT.py`, `sum.py`, respectively.    
 
