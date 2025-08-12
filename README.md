@@ -91,7 +91,8 @@ where `runtotal.py` is main entry file, `Lang` is the project under test, `0` is
 
 - `GGAT` is the gated graph attention neural network model. Since the adjacency matrix representing the graph structure is a sparse matrix, we additionally provide a sparse matrix-based gated graph attention neural network `SpGGAT` to reduce the space required at runtime. Both models are configured in `GGAT.py`. Should you wish to employ `SpGGAT`, you can designate the sixth parameter as `SpGGAT`, as exemplified in the `Example command`. 
 
-
+To address reproducibility concerns, we have **added a new `README.md` inside the `code` folder**, providing **step-by-step reproduction instructions**, including parameter settings, file dependencies, and command examples.  
+Please refer to **`code/README.md`** for detailed experimental reproduction guidance.
 
 
 
