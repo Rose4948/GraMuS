@@ -2,7 +2,7 @@
 
 This folder contains the source code for the **GraMuS** framework: a graph-based and multi-information-enhanced fault localization system at the statement level.
 
-##Key Files
+## Key Files
 
 - `runtotalAll.py`: Main entry point. Accepts user parameters and initiates the experiment process.
 - `runAll.py`: Trains the ranking model for each buggy version and outputs prediction results.
@@ -15,7 +15,7 @@ This folder contains the source code for the **GraMuS** framework: a graph-based
 
 ---
 
-##Runtime Environment
+## Runtime Environment
 
 ### Python
 - Version: **Python 3.x**
@@ -47,7 +47,7 @@ conda install pytorch==1.13.0 torchvision torchaudio cudatoolkit=11.6 -c pytorch
 
 ---
 
-##How to Run GraMuS
+## How to Run GraMuS
 
 To run fault localization on a specific project (e.g., Lang), use the following command:
 
@@ -88,7 +88,7 @@ python runtotalAll.py Lang 0 0.01 60 SpGGAT 15 3
 
 ---
 
-##Notes
+## Notes
 
 - All parameters above are default values and suitable for first-time usage.
 - `SpGGAT` is recommended for large-scale graphs to reduce memory consumption. To use the standard version, replace it with `GGAT`.
@@ -96,6 +96,6 @@ python runtotalAll.py Lang 0 0.01 60 SpGGAT 15 3
 
 ---
 
-##Output
+## Output
 
 - Prediction results for each buggy version are stored in `.pkl` files in the output directory.
